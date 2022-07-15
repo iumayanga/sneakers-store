@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0"> 
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="styleSheet.css">
+        <title>Sneakers Store</title>
+    </head>
+    <body>
+        <div class="navbar" id='nav'>
+            <ul>
+                <div class="col-2 col-2-s "> <li class="li" ><h2 class="lenth8" >Sneakers Store</h2></li> </div>  
+                <div class="col-10 col-10-s"> 
+                    <li  style="text-align: right;"><a href="#HOME" style="text-decoration: none; color: white">Home</a></li>
+                    <li  style="text-align: right;"><a href="#SIZECHART" style="text-decoration: none; color: white">Size Chart</a></li>
+                    <li  style="text-align: right;"><a href="#STILL" style="text-decoration: none; color: white">Our Team</a></li>
+                    <li  style="text-align: right;"><a href="#GET" style="text-decoration: none; color: white">Contact Us</a></li>
+                </div>
+            </ul>        
+        </div>
+
+        <div class="box"></div>
+        
+        <script type="text/javascript">   	
+            var  nav = document.getElementById('nav');
+      
+            window.onscroll = function(){
+                if (window.scrollY <= 60) {
+                    nav.style.background = "transparent";
+                    nav.style.boxShadow = "none";      		
+                }
+                else{
+                    nav.style.background = "#365C9A";
+                    nav.style.boxShadow = "0px 4px 2px blue";
+                }
+            }
+        </script>
+        
+        <div class="grid-container">
+            <div class="sample">
+                <a name="HOME"></a>
+            </div>
+            <div class="sample1"></div>
+            <div class="sample2">
+                <img name="slide" height="300" width="500">
+            </div>
+            <div class="sample3">
+                <p style="color: white;">Sneakers Store Sale!</p>
+                <br>
+                <h1>New sports collection already on sale</h1>
+                <br>
+                <button class="btn"><a href="#BESTSELLERS" style="text-decoration: none; color: black">Start Shopping</a></button>
+            </div>
+        </div>
+     
+        <script>
+            var i = 0;
+            var images = [];
+            var time = 3000;
+                
+            images[0] = 'bestseller1.jpg';
+            images[1] = 'bestseller2.jpg';
+            images[2] = 'bestseller3.jpg';
+                
+            function changeImg(){
+                document.slide.src = images[i];
+                    
+                if(i < images.length -1){
+                    i++;
+                }
+                else{
+                    i = 0;
+                }
+                
+                setTimeout("changeImg()", time)
+            }
+            
+            window.onload = changeImg;                    
+        </script>
+        
+        <div class="bestseller">
+            <br>
+            <br>
+            <a name="BESTSELLERS">BEST SELLERS</a>
+        </div>
+        <div class="row">
+            <div class="col-4 col-12-s" style="background-color: transparent; margin-left: 100px">
+                <center>
+                    <img src="bestseller1.jpg" class="row1" >
+                    <h2 class="lenth3">BROWN GLASSES</h2>
+                    <p class="lenth3" style="opacity: 0.5">Casual Sneaker</p>
+                    <div class="ratings lenth3">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </center>
+            </div>
+            <div class="col-4 col-12-s lenth2" >
+                <center>
+                    <img src="bestseller2.jpg" class="row1" >
+                    <h2 class="lenth3">BROWN GLASSES</h2>
+                    <p class="lenth3" style="opacity: 0.5">Casual Sneaker</p>
+                    <div class="ratings lenth3">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                </center>
+            </div>
+            <div class="col-4 col-12-s lenth2">
+                <center>
+                    <img src="bestseller3.jpg" class="row1" >
+                    <h2 class="lenth3">BROWN GLASSES</h2>
+                    <p class="lenth3" style="opacity: 0.5">Casual Sneaker</p>
+                    <div class="ratings lenth3">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </center>
+            </div>
+        </div>
+        
+        <a name="SIZECHART"> </a>
+        <div class="bestseller"><br><br>SIZE CHART<br><br></div>
+        
+        <div class="lenth">
+            <center>
+                <table class="content-table">
+                    <tr class="content-table">
+                        <th>cm</th>
+                        <th>23,5</th>
+                        <th>24,4</th>
+                        <th>25,4</th>
+                        <th>25</th>
+                        <th>27</th>
+                        <th>27,9</th>
+                        <th>28,6</th>
+                        <th>29,4</th>
+                    </tr>
+                       
+                    <tr class="content-table">
+                        <td>EU</td>
+                        <td>39</td>
+                        <td>40</td>
+                        <td>41</td>
+                        <td>42</td>
+                        <td>43</td>
+                        <td>44</td>
+                        <td>45</td>
+                        <td>46</td>
+                    </tr>
+                  
+                    <tr class="content-table">
+                        <td>UK</td>
+                        <td>5,5</td>
+                        <td>6,5</td>
+                        <td>7,5</td>
+                        <td>8,5</td>
+                        <td>9,5</td>
+                        <td>10,5</td>
+                        <td>11,5</td>
+                        <td>12,5</td>             
+                    </tr>
+                    
+                    <tr class="content-table">
+                        <td>US</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td >12</td>
+                        <td>13</td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+        
+        <div class="bestseller">
+            <br>
+            <br>
+            <a name="STILL">STILL IN DOUBT? COME AND OUR TEAM WILL HELP YOU</a>
+        </div>
+        <div class="col-3 col-12-s divitionimg">
+            <center>
+                <img src="user1.JPG" class="row2" >
+                <h2 class="people" style="text-align:justify">Amanda Fernandz</h2>
+                <p class="people" style="color: #365C9A; text-align: justify">Sales Manager</p>                 
+            </center>
+        </div>
+        <div class="col-3 col-12-s" style="background-color: transparent; margin-left: -40px">
+            <center>
+                <img src="user2.JPG" class="row2" >
+                <h2 class="people" style="text-align:justify">Amanda Fernandz</h2>
+                <p class="people" style="color: #365C9A; text-align: justify">Sales Manager</p>
+            </center>
+        </div>
+        <div class="col-3 col-12-s" style="background-color: transparent; margin-left: -40px">
+            <center>
+                <img src="user3.JPG" class="row2" >
+                <h2 class="people" style="text-align:justify">Amanda Fernandz</h2>
+                <p class="people" style="color: #365C9A; text-align: justify">Sales Manager</p>
+            </center>
+        </div>
+        <div class="col-3 col-12-s" style="background-color: transparent; margin-left: -40px">
+            <center>
+                <img src="user4.JPG" class="row2" >
+                <h2 class="people" style="text-align:justify">Amanda Fernandz</h2>
+                <p class="people" style="color: #365C9A; text-align: justify">Sales Manager</p>
+            </center>
+        </div>
+        
+        <div class="row">
+            <div class="col-6 col-12-s" style="background-color: transparent; margin-top: 200px; margin-left: 100px">
+                <p class="lenth5"><a name="GET">GET IN TOUCH WITH US AND WE CAN HELP YOU</a></p>
+                <br>
+                <br>
+                <h2 class="lenth6">Come to us and ask a question right now</h2>
+          
+                <div class="wrap">
+                    <div class="form1">
+                        
+                        <form action="MAILTO:someone@gmail.com" method="post" enctype="multipart/formdata">                
+                            <input type="text" id="ert"  class="input" placeholder = "Your Name*" required>
+                            <input type="text" id="ert1" class="input" placeholder = "Your Last Name">
+                            <br><br>
+                            <input type="email" id="ert2" class="input" placeholder = "Email*" required>
+                            <input type="text" id="ert3" class="input" placeholder="Phone">
+                            <br>
+                            <div class = "msg">
+                                <textarea id="ert4" placeholder ="Message" cols="25" rows="5"></textarea>
+                            </div>
+                            
+                            <script>
+                                var changex = document.getElementById("ert");
+                                changex.onchange = function (e){
+                                    if (changex.nodeValue != ''){
+                                        e.target.style.backgroundColor = "#F1F1F1";
+                                    }
+                                }
+                                var changey = document.getElementById("ert1");
+                                changey.onchange = function (e){
+                                    if (changey.nodeValue != ''){
+                                        e.target.style.backgroundColor = "#F1F1F1";
+                                    }
+                                }
+                                var changez = document.getElementById("ert2");
+                                changez.onchange = function (e){
+                                    if (changez.nodeValue != ''){
+                                        e.target.style.backgroundColor = "#F1F1F1";
+                                    }
+                                }
+                                var changea = document.getElementById("ert3");
+                                changea.onchange = function (e){
+                                    if (changea.nodeValue != ''){
+                                        e.target.style.backgroundColor = "#F1F1F1";
+                                    }
+                                }
+                                var changeb = document.getElementById("ert4");
+                                changeb.onchange = function (e){
+                                    if (changea.nodeValue != ''){
+                                        e.target.style.backgroundColor = "#F1F1F1";
+                                    }
+                                }
+                            </script>
+                            
+                            <br>
+                            <input class="btn1" type="submit" value="Send Message">
+                        </form>            
+                    </div>
+                </div>
+            </div>
+               
+            <div class="col-6 col-12-s" style="background-color: transparent; margin-top: 200px; margin-left: -100px">
+                <a href="http://maps.google.com"><img src="map.jpg" class="map" ></a>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="col-12 lenth4" style="background-color: #365C9A; padding: 10px; margin-top: 30px">
+            <center><h2 class="footer">Copyright &copy; 2020 - Sneakers store - All rights reserved.</h2></center>
+        </div>
+    </footer>
+</html>
